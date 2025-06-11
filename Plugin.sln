@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin", "Plugin.csproj", "{0C8BFA61-CFB0-4EA7-913A-D2A0ED8C8FDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginCustomActionMessage", "..\PluginCustomActionMessage\PluginCustomActionMessage.csproj", "{6B7B825C-BDEA-4B55-9FB1-66E7872104CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginCustomActivation", "..\PluginCustomActivation\PluginCustomActivation.csproj", "{64BA4CD5-CA6C-40FD-A19A-E9AA9A88D563}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{0C8BFA61-CFB0-4EA7-913A-D2A0ED8C8FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C8BFA61-CFB0-4EA7-913A-D2A0ED8C8FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C8BFA61-CFB0-4EA7-913A-D2A0ED8C8FDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B7B825C-BDEA-4B55-9FB1-66E7872104CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B7B825C-BDEA-4B55-9FB1-66E7872104CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B7B825C-BDEA-4B55-9FB1-66E7872104CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B7B825C-BDEA-4B55-9FB1-66E7872104CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64BA4CD5-CA6C-40FD-A19A-E9AA9A88D563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64BA4CD5-CA6C-40FD-A19A-E9AA9A88D563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64BA4CD5-CA6C-40FD-A19A-E9AA9A88D563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64BA4CD5-CA6C-40FD-A19A-E9AA9A88D563}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

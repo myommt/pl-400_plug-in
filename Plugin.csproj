@@ -97,7 +97,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="_PluginCSCode.cs" />
     <Compile Include="PluginCSCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

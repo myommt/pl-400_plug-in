@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\zaimy\\OneDrive\\Documents\\PL400-Dev\\Plugin\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{64BA4CD5-CA6C-40FD-A19A-E9AA9A88D563}|..\\PluginCustomActivation\\PluginCustomActivation.csproj|c:\\users\\zaimy\\onedrive\\documents\\pl400-dev\\plugincustomactivation\\customupdateaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C8BFA61-CFB0-4EA7-913A-D2A0ED8C8FDA}|Plugin.csproj|c:\\users\\zaimy\\onedrive\\documents\\pl400-dev\\plugin\\plugincscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C8BFA61-CFB0-4EA7-913A-D2A0ED8C8FDA}|Plugin.csproj|solutionrelative:plugincscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PluginCustomActivation||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B7B825C-BDEA-4B55-9FB1-66E7872104CA}|..\\PluginCustomActionMessage\\PluginCustomActionMessage.csproj|c:\\users\\zaimy\\onedrive\\documents\\pl400-dev\\plugincustomactionmessage\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64BA4CD5-CA6C-40FD-A19A-E9AA9A88D563}|..\\PluginCustomActivation\\PluginCustomActivation.csproj|c:\\users\\zaimy\\onedrive\\documents\\pl400-dev\\plugincustomactivation\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|f8d6553f-f752-4dbf-acb6-f291b744a792"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PluginCustomActivation",
+              "DocumentMoniker": "C:\\Users\\zaimy\\OneDrive\\Documents\\PL400-Dev\\PluginCustomActivation\\PluginCustomActivation.csproj",
+              "RelativeDocumentMoniker": "..\\PluginCustomActivation\\PluginCustomActivation.csproj",
+              "ToolTip": "C:\\Users\\zaimy\\OneDrive\\Documents\\PL400-Dev\\PluginCustomActivation\\PluginCustomActivation.csproj",
+              "RelativeToolTip": "..\\PluginCustomActivation\\PluginCustomActivation.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-08T12:52:45.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CustomUpdateAccount.cs",
+              "DocumentMoniker": "C:\\Users\\zaimy\\OneDrive\\Documents\\PL400-Dev\\PluginCustomActivation\\CustomUpdateAccount.cs",
+              "RelativeDocumentMoniker": "..\\PluginCustomActivation\\CustomUpdateAccount.cs",
+              "ToolTip": "C:\\Users\\zaimy\\OneDrive\\Documents\\PL400-Dev\\PluginCustomActivation\\CustomUpdateAccount.cs",
+              "RelativeToolTip": "..\\PluginCustomActivation\\CustomUpdateAccount.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T12:45:54.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PluginCSCode.cs",
               "DocumentMoniker": "C:\\Users\\zaimy\\OneDrive\\Documents\\PL400-Dev\\Plugin\\PluginCSCode.cs",
               "RelativeDocumentMoniker": "PluginCSCode.cs",
               "ToolTip": "C:\\Users\\zaimy\\OneDrive\\Documents\\PL400-Dev\\Plugin\\PluginCSCode.cs",
               "RelativeToolTip": "PluginCSCode.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJMAAAAlAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAewBcAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T11:39:40.289Z",
+              "WhenOpened": "2025-06-08T12:38:30.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\zaimy\\OneDrive\\Documents\\PL400-Dev\\PluginCustomActionMessage\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\PluginCustomActionMessage\\Class1.cs",
+              "ToolTip": "C:\\Users\\zaimy\\OneDrive\\Documents\\PL400-Dev\\PluginCustomActionMessage\\Class1.cs",
+              "RelativeToolTip": "..\\PluginCustomActionMessage\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T12:33:32.143Z",
               "EditorCaption": ""
             }
           ]

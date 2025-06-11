@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Messages;
-using Microsoft.Xrm.Sdk.Query;
+using Microsoft.Xrm.Sdk.Query; 
 
 namespace Plugin
 {
@@ -62,11 +62,22 @@ namespace Plugin
             var retrieveAccountCopy = service.Retrieve("cr8af_accountcopy", accountId, new ColumnSet("cr8af_name", "cr8af_fax"));
 
             // update after retrieve
+            var existingAccount = new Entity("cr8af_accountcopy", accountId);
             var updateAccount2 = new Entity("cr8af_accountcopy");
             updateAccount2.Id = accountId;
             updateAccount2["cr8af_name"] = retrieveAccountCopy["cr8af_name"] + " Update";
             updateAccount2["cr8af_fax"] = retrieveAccountCopy["cr8af_fax"] + " Update";
-            service.Update(updateAccount2);
+            updateAccount2.RowVersion = existingAccount.RowVersion; //to make the row version to be same
+            //service.Update(updateAccount2);
+
+            var requestUpdate=new UpdateRequest() { 
+                Target = updateAccount2, 
+                ///ConcurrencyBehavior = ConcurrencyBehavior.Default                // 0 - Let computer decide
+                ConcurrencyBehavior = ConcurrencyBehavior.IfRowVersionMatches  // 1 - only the target data is same version
+                //ConcurrencyBehavior = ConcurrencyBehavior.AlwaysOverwrite      // 2 - always update/delete
+
+            };
+            service.Execute(requestUpdate);
 
             //Retrieve with alternative key
             //RetrieveRequest retrieveRequest = new RetrieveRequest()
@@ -79,6 +90,7 @@ namespace Plugin
 
             //tracingService.Trace("Stage {0} {1} {2}", ++stageNumber, entityRetrieve["name"],entityRetrieve["fax"]);
              
+            /*
             // Retrieve with compound alternative keys (KeyAttributeCollection) /more than one key
             var keyS = new KeyAttributeCollection();
             keyS.Add("name", "new account plug in test10");
@@ -120,11 +132,12 @@ namespace Plugin
             {
 
             }
+
             
             tracingService.Trace("Stage {0} {1} {2}", ++stageNumber, name, fax);
-
+            */
             //Retrieve Multiple
-
+            tracingService.Trace("Retrieve Multiple");
             //Condition Expression
             ConditionExpression conditionExp = new ConditionExpression();
             conditionExp.AttributeName = "name";
@@ -159,6 +172,29 @@ namespace Plugin
                 tracingService.Trace("Stage {0} {1} {2}", ++stageNumber, name1, fax1);
 
             }
+
+            //Upsert
+            tracingService.Trace("Upsert");
+            tracingService.Trace("Stage {0}", ++stageNumber);
+
+            var upsertAccount = new Entity("cr8af_accountcopy", "cr8af_name", "latest Insert");
+            upsertAccount["cr8af_fax"] = "007" + accountName;
+            var upsertRequest = new UpsertRequest()
+            {
+                Target = upsertAccount
+            };
+
+            var upsertResponse = (UpsertResponse)service.Execute(upsertRequest);
+
+            if(upsertResponse.RecordCreated)
+            {
+                tracingService.Trace("Stage {0} Record Created", ++stageNumber);
+            }
+            else
+            {
+                tracingService.Trace("Stage {0} Record Updated", ++stageNumber);
+            }
+
 
         }
     }
